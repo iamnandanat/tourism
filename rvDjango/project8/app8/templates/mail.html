@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'app8:mail' %}" method="post" class="contact-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required/>
+        </div>
+        <div class="form-group">
+            <input type="text" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required/>
+        </div>
+        <div class="form-group">
+            <textarea id="text" id="contact_message" name="contact_message" class="form-control" rows="'9" placeholder="Message" required></textarea>
+        </div>
+        <button type="submit" class="float-right tm-button">
+            Send
+        </button>
+    </form>
+</body>
+</html>

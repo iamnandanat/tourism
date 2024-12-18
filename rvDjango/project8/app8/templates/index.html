@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Secure Register
+        </title>
+    </head>
+    <body>
+        {%for msg in messages%}
+        {{msg}}
+        {%endfor%}
+        <br>
+        To Register your info click Register <br>
+        {{datas}}
+       
+        
+        <a href="{% url 'app8:register' %}">Register</a>
+        <a href="{% url 'app8:login' %}">Login</a>
+        <a href="{% url 'app8:mail' %}">mail</a>
+    </body>
+</html>

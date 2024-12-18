@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Secure Register
+        </title>
+    </head>
+    <body>
+        {% for msg in messages %}
+        {{msg}}
+        {% endfor %}
+        <br>
+        Please click the Highlighted Text<br>
+        {{datas}}
+
+        <a href="{% url 'app9:register' %}">Register</a>
+        <a href="{% url 'app9:login' %}">Login</a>
+    </body>
+</html>

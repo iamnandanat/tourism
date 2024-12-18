@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My WebPage
+        </title>
+    </head>
+    <body>
+        {% for msg in messages %}
+        {{msg}}
+        {% endfor %}
+        <br>
+        I am Rejeth Vinod<br>
+        Kannur<br>
+        {{datas}}
+
+        <a href="{% url 'app7:register' %}">Register</a>
+    </body>
+</html>
